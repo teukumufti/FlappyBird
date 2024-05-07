@@ -3,8 +3,6 @@
 ![](https://img.shields.io/badge/game-FlappyBird-critical.svg)
 ![](https://img.shields.io/github/stars/sunzhichao/FlappyBird)
 
-English | [简体中文](zh/README-cn.md)
-
 # Flappy Bird
 
 ## Overview
@@ -21,20 +19,22 @@ A Flappy Bird game based on Java basic class library
 
 **All projects use Java basic class library, based on Java 14, suitable for beginners to learn**
 
-**This project contains two separate source codes, which are English comments (src) and Chinese comments (zh/src)**
+**This project contains two separate source codes, which are English comments (src)**
 
 ## Start
 
 - Game entrance is `FlappyBird/src/main/java/com/sunzhichao/FlappyBird/app/AppMain.java`，just run`main method` directly
 - Double click`FlappyBird.jar` to run game
 - use the Command Line `java -jar FlappyBird.jar`to run game
-<!-- ## Demo
+
+## Demo
+
 ![](https://github.com/sunzhichao/FlappyBird/blob/main/src/main/resources/readme_img/demo_how_to_start.gif)
 
-## Structure
+<!-- ## Structure
 
-![](https://github.com/sunzhichao/FlappyBird/blob/main/src/main/resources/readme_img/class-structure-en.png?raw=true)
+![](https://github.com/sunzhichao/FlappyBird/blob/main/src/main/resources/readme_img/class-structure-en.png?raw=true) -->
 
 ## Thanks
 
-The reference of this project is [FlappyBird](https://github.com/kingyuluk/FlappyBird) of [kingyuluk](https://github.com/kingyuluk),express thankfulness. -->
+The reference of this project is [FlappyBird](https://github.com/teukumufti/FlappyBird) of [kingyuluk](https://github.com/teukumufti/FlappyBird),express thankfulness.
