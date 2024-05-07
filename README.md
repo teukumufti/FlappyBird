@@ -37,4 +37,4 @@ A Flappy Bird game based on Java basic class library
 
 ## Thanks
 
-The reference of this project is [FlappyBird](https://github.com/teukumufti/FlappyBird) of [kingyuluk](https://github.com/teukumufti/FlappyBird),express thankfulness.
+The reference of this project is [FlappyBird](https://github.com/teukumufti/FlappyBird) of [Teuku Mufti](https://github.com/teukumufti/FlappyBird),express thankfulness.
