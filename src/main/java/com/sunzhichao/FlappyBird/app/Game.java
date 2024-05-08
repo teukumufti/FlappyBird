@@ -15,6 +15,7 @@ public class Game extends Frame {
 
     private static int gameState;
     private GameBackground background;
+    private GameDardBackground darkbackground;
     private CloudControl cloudControl;
     private Bird bird;
     private PipeControl pipeControl;
@@ -54,6 +55,7 @@ public class Game extends Frame {
      */
     private void initGame() {
         background = new GameBackground();
+        darkbackground = new GameDardBackground();
         cloudControl = new CloudControl();
         pipeControl = new PipeControl();
         welcomeAnimation = new WelcomeAnimation();
@@ -79,7 +81,11 @@ public class Game extends Frame {
     public void update(Graphics g) {
         Graphics bufG = bufImg.getGraphics();//Get “picture brush”
         //Use the picture brush to draw the content that needs to be drawn to the picture
-        background.draw(bufG, bird);
+        if (ScoreCounter.getInstance().getCurrentScore() >= 3) {
+            darkbackground.draw(bufG, bird);
+        } else {
+            background.draw(bufG, bird);
+        }
         cloudControl.draw(bufG, bird);
         if (gameState == GAME_READY) {
             welcomeAnimation.draw(bufG);
@@ -87,8 +93,9 @@ public class Game extends Frame {
             pipeControl.draw(bufG, bird);
         }
         bird.draw(bufG);
-          g.drawImage(bufImg, 0, 0, null);//Draw the picture on the screen at once
+        g.drawImage(bufImg, 0, 0, null);//Draw the picture on the screen at once
     }
+    
 
     public static void setGameState(int gameState) {
         Game.gameState = gameState;

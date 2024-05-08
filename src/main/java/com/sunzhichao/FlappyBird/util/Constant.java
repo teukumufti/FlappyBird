@@ -29,15 +29,21 @@ public class Constant {
     public static final int FPS = 1000 / 30;
 
     //Game title
-    public static final String GAME_TITLE = "Flappy Bird written by sunzhichao";
+    public static final String GAME_TITLE = "Flappy ";
 
     //Game speed (moving speed of pipe and background layer)
     public static final int GAME_SPEED = 4;
 
-    public static final String BG_IMG_PATH = "src/main/resources/image/background.png"; // 背景图片
+    public static final String BG_IMG_PATH = "src/main/resources/image/background.png"; 
+
+    public static final String BG_DARK_IMG_PATH = "src/main/resources/image/dark-background.png"; 
+
 
     //background color
     public static final Color BG_COLOR = new Color(0x4bc4cf);
+    public static final Color BG_DARK_COLOR = new Color(0x008793);
+    
+
 
     //Ground height
     public static final int GROUND_HEIGHT = 35;
