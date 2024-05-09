@@ -29,7 +29,7 @@ public class Constant {
     public static final int FPS = 1000 / 30;
 
     //Game title
-    public static final String GAME_TITLE = "Flappy ";
+    public static final String GAME_TITLE = "Flappy Bird";
 
     //Game speed (moving speed of pipe and background layer)
     public static final int GAME_SPEED = 4;

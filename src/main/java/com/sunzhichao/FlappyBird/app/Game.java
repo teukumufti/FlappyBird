@@ -44,6 +44,8 @@ public class Game extends Frame {
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
+                // ScoreCounter.getInstance().saveScore(); // Save the best score before 
+                ScoreCounter.getInstance().resetBestScore(); // Set the best score to 0 when closing the window
                 System.exit(0);//End the program
             }
         });
@@ -141,6 +143,8 @@ public class Game extends Frame {
             bird.reset();
         }
 
+        
+
 
         /**
          * When the space button is released,
@@ -161,5 +165,7 @@ public class Game extends Frame {
         public void keyTyped(KeyEvent e) {
         }
     }
+
+    
 
 }

@@ -84,4 +84,9 @@ public class ScoreCounter {
     public void reset(){
         score = 0;
     }
+
+    public void resetBestScore(){
+        bestScore = 0; 
+        saveScore();
+    }
 }
